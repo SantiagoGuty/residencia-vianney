@@ -1,0 +1,27 @@
+.navbar {
+  background: var(--beige);
+  padding: 1.5rem 1rem;
+  text-align: center;
+}
+
+.navbar-logo img {
+  width: 150px;
+  margin-bottom: 0.75rem;
+}
+
+.navbar-links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.navbar-links a {
+  color: var(--blue);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+  color: var(--green);
+}

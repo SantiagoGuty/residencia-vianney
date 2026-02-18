@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-noto), system-ui, sans-serif;
+  background: var(--beige);
+  color: var(--text);
+  scroll-behavior: smooth;
+}
+
+
+main {
+  overflow-x: hidden;
+}
+
+h1, h2, h3 {
+  font-weight: 600;
+}
+
+p, li {
+  line-height: 1.75;
+  font-size: 1.05rem;
+}

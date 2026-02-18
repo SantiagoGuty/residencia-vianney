@@ -1,0 +1,133 @@
+.footer {
+  background: white;
+  color: var(--blue);
+  margin-top: var(--section-padding);
+}
+
+/* MAIN GRID */
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 2rem 3rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 4rem;
+  position: relative;
+}
+
+/* ========================= */
+/* BRAND */
+/* ========================= */
+
+.brandColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.logoWrapper {
+  margin-bottom: 2rem;
+  cursor: pointer;
+}
+
+.logo {
+  width: 260px;
+  height: auto;
+  transition: transform 0.4s var(--ease-soft);
+}
+
+
+.logo:hover {
+  transform: scale(1.05);
+}
+
+.description {
+  line-height: 1.7;
+  margin-bottom: 2rem;
+  color: var(--blue);
+  max-width: 420px;
+}
+
+/* ========================= */
+/* LINKS */
+/* ========================= */
+
+.linksColumn h4 {
+  margin-bottom: 1.2rem;
+  font-weight: 600;
+  color: var(--blue);
+}
+
+.linksColumn a {
+  display: block;
+  margin-bottom: 0.7rem;
+  color: var(--blue);
+  text-decoration: none;
+  transition: all 0.3s var(--ease-soft);
+}
+
+.linksColumn a:hover {
+  color: var(--green);
+  transform: translateX(4px);
+}
+
+/* ========================= */
+/* WHATSAPP CENTER ROW */
+/* ========================= */
+
+.whatsappRow {
+  grid-column: 2 / 4;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: -11.5rem; /* pulls it upward */
+}
+
+.whatsapp img {
+  width: 70px !important;
+  height: auto;
+}
+
+
+.whatsapp {
+  transition: transform 0.3s var(--ease-soft);
+}
+
+.whatsapp:hover {
+  transform: translateY(-6px) scale(1.1);
+}
+
+/* ========================= */
+/* BOTTOM STRIP */
+/* ========================= */
+
+.bottomStrip {
+  background: var(--blue);
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: white;
+}
+
+/* ========================= */
+/* RESPONSIVE */
+/* ========================= */
+
+@media (max-width: 900px) {
+  .inner {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .whatsappRow {
+    grid-column: auto;
+  }
+
+  .brandColumn {
+    align-items: center;
+    text-align: center;
+  }
+
+  .description {
+    max-width: 100%;
+  }
+}

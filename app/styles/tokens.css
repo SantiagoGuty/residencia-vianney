@@ -1,0 +1,19 @@
+:root {
+  /* Brand colors (from your logo) */
+  --green: #7fbf7a;
+  --blue: #4fa3c7;
+  --beige: #f3efe8;
+  --dark: #0f1f1c;
+  --text: #1e2b28;
+
+  /* UI */
+  --radius-lg: 24px;
+  --radius-md: 16px;
+  --radius-sm: 10px;
+
+  /* Spacing */
+  --section-padding: 6rem;
+
+  /* Transitions (Squarespace-like) */
+  --ease-soft: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
