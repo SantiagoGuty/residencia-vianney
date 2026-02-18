@@ -1,0 +1,73 @@
+.wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* HEADER */
+
+.header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.tag {
+  display: inline-block;
+  background: rgba(40, 175, 176, 0.12);
+  color: var(--teal);
+  padding: 0.4rem 1rem;
+  border-radius: 40px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+}
+
+.header h2 {
+  font-size: clamp(2rem, 3vw, 2.6rem);
+  color: var(--blue);
+  margin-bottom: 1.5rem;
+  line-height: 1.25;
+}
+
+.intro {
+  font-size: 1.2rem;
+  line-height: 1.75;
+  color: var(--dark);
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+/* PILLARS */
+
+.pillars {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+/* CARD STYLE */
+
+.card {
+  background: var(--white);
+  padding: 2.2rem;
+  border-radius: var(--radius-lg);
+  border: 1px solid rgba(25, 100, 126, 0.08);
+  transition: transform 0.3s var(--ease-soft),
+              box-shadow 0.3s var(--ease-soft);
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.06);
+}
+
+.card h3 {
+  color: var(--blue);
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.card p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--dark);
+}

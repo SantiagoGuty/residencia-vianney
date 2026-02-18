@@ -101,11 +101,11 @@
 /* ========================= */
 
 .bottomStrip {
-  background: var(--blue);
+  background: var(--green);
   text-align: center;
   padding: 1rem;
   font-size: 0.9rem;
-  color: white;
+  color: var(--white);
 }
 
 /* ========================= */

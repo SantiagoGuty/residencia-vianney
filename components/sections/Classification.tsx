@@ -1,33 +1,56 @@
+import styles from "./Classification.module.css";
+
 export default function Classification() {
   return (
-    <section className="section">
-      <h2>Clasificación funcional (G1 – G3)</h2>
+    <section className={styles.section}>
 
-      <div className="grid">
-        <div>
-          <h3>G1 – Muy funcional</h3>
+      <div className={styles.container}>
+
+        <div className={styles.header}>
+          <span className={styles.tag}>Evaluación personalizada</span>
+          <h2>Clasificación funcional (G1 – G3)</h2>
           <p>
-            Personas que se desenvuelven con independencia o con apoyos mínimos.
-            El plan se enfoca en prevención, vida activa y estimulación.
+            Valoramos el nivel funcional de cada residente para diseñar
+            un plan de atención clínico, humano y adaptado a sus necesidades.
           </p>
         </div>
 
-        <div>
-          <h3>G2 – Funcional con apoyos</h3>
-          <p>
-            Requieren acompañamiento moderado. Priorizamos rehabilitación,
-            seguridad, rutinas y fortalecimiento funcional.
-          </p>
+        <div className={styles.grid}>
+
+          <div className={`${styles.card} ${styles.g1}`}>
+            <div className={styles.badge}>G1</div>
+            <h3>Muy funcional</h3>
+            <p>
+              Independencia o apoyos mínimos.
+              Enfoque en prevención, autonomía
+              y vida activa.
+            </p>
+          </div>
+
+          <div className={`${styles.card} ${styles.g2}`}>
+            <div className={styles.badge}>G2</div>
+            <h3>Funcional con apoyos</h3>
+            <p>
+              Acompañamiento moderado enfocado
+              en seguridad, estimulación y
+              fortalecimiento progresivo.
+            </p>
+          </div>
+
+          <div className={`${styles.card} ${styles.g3}`}>
+            <div className={styles.badge}>G3</div>
+            <h3>Alta dependencia</h3>
+            <p>
+              Atención integral centrada en confort,
+              supervisión continua y acompañamiento
+              cercano a la familia.
+            </p>
+          </div>
+
         </div>
 
-        <div>
-          <h3>G3 – Muy poco funcional</h3>
-          <p>
-            Personas con alta dependencia. El cuidado se centra en confort,
-            seguridad, atención integral y apoyo intensivo a la familia.
-          </p>
-        </div>
       </div>
+
     </section>
   );
 }

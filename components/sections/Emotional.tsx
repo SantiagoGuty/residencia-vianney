@@ -1,27 +1,50 @@
-import SectionImage from "@/components/ui/SectionImage";
+import styles from "./Emotional.module.css";
+import Image from "next/image";
 
 export default function Emotional() {
   return (
-    <section className="section alt section-with-image">
-      <div className="text">
-        <h2>Bienestar emocional para el adulto y su familia</h2>
+    <section className={styles.section}>
 
-        <p>
-          Brindamos acompañamiento psicológico al adulto mayor para favorecer la
-          adaptación a los cambios, el manejo del estrés y la autoestima.
-        </p>
+      <div className={styles.container}>
 
-        <ul>
-          <li>Manejo de la sobrecarga del cuidado</li>
-          <li>Estrategias de comunicación</li>
-          <li>Organización de rutinas</li>
-        </ul>
+        <div className={styles.left}>
+          <span className={styles.tag}>Bienestar emocional</span>
+
+          <h2>
+            Apoyo emocional para el adulto y su familia
+          </h2>
+
+          <p className={styles.description}>
+            Acompañamos procesos de adaptación, fortalecemos la autoestima
+            y brindamos herramientas prácticas para mantener equilibrio
+            emocional en cada etapa.
+          </p>
+
+          <div className={styles.features}>
+            <div className={styles.feature}>
+              Manejo de la sobrecarga del cuidado
+            </div>
+            <div className={styles.feature}>
+              Estrategias de comunicación familiar
+            </div>
+            <div className={styles.feature}>
+              Organización saludable de rutinas
+            </div>
+          </div>
+        </div>
+
+        <div className={styles.right}>
+          <Image
+            src="/images/emotional.jpg"
+            alt="Profesional acompañando emocionalmente a adulto mayor"
+            fill
+            className={styles.image}
+            priority
+          />
+        </div>
+
       </div>
 
-      <SectionImage
-        src="/images/emotional.jpg"
-        alt="Acompañamiento emocional al adulto mayor"
-      />
     </section>
   );
 }

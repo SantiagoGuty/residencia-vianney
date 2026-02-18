@@ -1,0 +1,100 @@
+/* Top accent line */
+.navbar {
+  background: var(--white);
+  border-top: 7px solid var(--green);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.04);
+  top: 0;
+  z-index: 1000;
+}
+
+/* Inner layout */
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0.67rem 9rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo */
+.logoWrapper {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.logo {
+  height: auto;
+  width: 167px;
+  transition: transform 0.3s var(--ease-soft);
+}
+
+.logoWrapper:hover .logo {
+  transform: scale(1.04);
+}
+
+/* Links */
+.links {
+  display: flex;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.links a {
+  text-decoration: none;
+  color: var(--blue);
+  font-size: 1.05rem;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s var(--ease-soft);
+}
+
+/* Elegant underline hover */
+.links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0%;
+  height: 2px;
+  background: var(--teal);
+  transition: width 0.3s var(--ease-soft);
+}
+
+.links a:hover {
+  color: var(--teal);
+}
+
+.links a:hover::after {
+  width: 100%;
+}
+
+/* Contact button */
+.contactButton {
+  background: var(--blue);
+  color: var(--white) !important;
+  padding: 0.6rem 1.4rem;
+  border-radius: 40px;
+  transition: all 0.3s var(--ease-soft);
+}
+
+.contactButton::after {
+  display: none;
+}
+
+.contactButton:hover {
+  background: var(--green);
+  transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .links {
+    gap: 1.5rem;
+  }
+
+  .logo {
+    width: 150px;
+  }
+}

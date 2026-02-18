@@ -1,13 +1,15 @@
+/* Global CSS variables */
 :root {
   /* Brand colors (from your logo) */
-  --green: #7fbf7a;
-  --blue: #4fa3c7;
-  --beige: #f3efe8;
-  --dark: #0f1f1c;
-  --text: #1e2b28;
+  --green: rgb(138, 186, 78); /* Willow green*/
+  --blue: rgb(25, 100, 126); /* Blue slate */
+  --teal: rgb(40, 175, 176); /* Tropical teal */
+  --beige: rgb(238, 150, 75); /* Sandy Brown */
+  --dark: rgb(31, 39, 27); /* Charcoal brown */
+  --white: rgb(250, 255, 248); /* Charcoal brown */
 
   /* UI */
-  --radius-lg: 24px;
+  --radius-lg: 24px; 
   --radius-md: 16px;
   --radius-sm: 10px;
 

@@ -1,27 +1,40 @@
+import SectionLayout from "@/components/ui/SectionLayout";
+import styles from "./Modalities.module.css";
+
 export default function Modalities() {
   return (
-    <section className="section alt">
-      <h2>Modalidades de atención</h2>
+    <SectionLayout alt>
+      <div className={styles.wrapper}>
 
-      <div className="grid">
-        <div>
-          <h3>Internación completa (24/7)</h3>
-          <p>
-            Cuidado integral permanente con supervisión continua y un plan
-            terapéutico estructurado, ajustado al nivel funcional y a las
-            necesidades clínicas y emocionales.
-          </p>
+        <div className={styles.header}>
+          <span className={styles.tag}>Modalidades</span>
+          <h2>Opciones de atención adaptadas a cada necesidad</h2>
         </div>
 
-        <div>
-          <h3>Adulto Día</h3>
-          <p>
-            Programa de atención por horas, en la mañana o la tarde, enfocado en
-            mantener la mente activa, conservar la funcionalidad, socializar de
-            forma segura y brindar tranquilidad a la familia.
-          </p>
+        <div className={styles.cards}>
+
+          <div className={styles.card}>
+            <div className={styles.accent}></div>
+            <h3>Internación completa (24/7)</h3>
+            <p>
+              Supervisión continua con plan terapéutico estructurado,
+              adaptado al nivel funcional y necesidades clínicas
+              y emocionales.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <div className={styles.accent}></div>
+            <h3>Adulto Día</h3>
+            <p>
+              Programa por horas enfocado en estimulación cognitiva,
+              socialización segura y acompañamiento familiar.
+            </p>
+          </div>
+
         </div>
+
       </div>
-    </section>
+    </SectionLayout>
   );
 }

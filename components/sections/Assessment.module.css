@@ -1,0 +1,85 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 5rem;
+  align-items: center;
+}
+
+/* Accent step number */
+.step {
+  font-size: 4rem;
+  font-weight: 600;
+  color: var(--blue);
+  opacity: 0.9;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.left h2 {
+  font-size: clamp(1.9rem, 3vw, 2.4rem);
+  color: var(--blue);
+  margin-bottom: 1.5rem;
+}
+
+.left p {
+  font-size: 1.15rem;
+  line-height: 1.75;
+  color: var(--dark);
+  margin-bottom: 2.5rem;
+  max-width: 600px;
+}
+
+/* Cards */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.6rem;
+}
+
+.card {
+  background: var(--white);
+  padding: 2rem;
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(25, 100, 126, 0.08);
+}
+
+.card h3 {
+  color: var(--blue);
+  margin-bottom: 0.8rem;
+  font-size: 1.1rem;
+}
+
+.card p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--dark);
+}
+
+/* Highlight box */
+.highlight {
+  background: linear-gradient(
+    135deg,
+    rgba(40, 175, 176, 0.08),
+    rgba(138, 186, 78, 0.08)
+  );
+  padding: 3rem;
+  border-radius: var(--radius-lg);
+}
+
+.highlight h3 {
+  font-size: 1.4rem;
+  color: var(--blue);
+  margin-bottom: 1rem;
+}
+
+.highlight p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--dark);
+}
+
+@media (max-width: 900px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+  }
+}

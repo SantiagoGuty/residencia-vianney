@@ -1,8 +1,8 @@
 .hero {
   display: grid;
   grid-template-columns: 1.1fr 1fr;
-  height: 75vh;
-  background: #f8f7f5;
+  min-height: 50vh;
+  background: var(--blue);
 }
 
 /* ================= LEFT ================= */
@@ -11,23 +11,25 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 6rem 4rem;
+  padding: 2rem 5rem;
 }
-
+ 
 .left h1 {
   font-size: clamp(2.8rem, 4vw, 3.4rem);
   font-weight: 600;
-  color: var(--blue);
-  line-height: 1.1;
+  color: var(--white);
+  line-height: 1.2;
   margin-bottom: 1.5rem;
 }
 
 .left p {
-  font-size: 1.1rem;
-  color: #5c6b7a;
-  max-width: 480px;
+  font-size: 1.2rem;
+  color: var(--white);
+  max-width: 520px;
   margin-bottom: 2.5rem;
 }
+
+/* ================= BUTTONS ================= */
 
 .buttons {
   display: flex;
@@ -35,31 +37,33 @@
 }
 
 .primary {
-  background: var(--blue);
-  color: white;
-  padding: 0.9rem 1.6rem;
+  background: var(--green);
+  color: var(--white);
+  padding: 1rem 1.8rem;
   border-radius: 40px;
   text-decoration: none;
-  transition: all 0.3s ease;
+  font-weight: 500;
+  transition: background 0.3s ease;
 }
 
 .primary:hover {
-  background: var(--green);
+  background: var(--teal);
 }
 
 .secondary {
-  border: 2px solid var(--blue);
-  color: var(--blue);
-  padding: 0.9rem 1.6rem;
+  border: 2px solid var(--green);
+  color: var(--white);
+  padding: 1rem 1.8rem;
   border-radius: 40px;
   text-decoration: none;
+  font-weight: 500;
   transition: all 0.3s ease;
 }
 
 .secondary:hover {
-  background: var(--green);
-  color: white;
-  border-color: var(--green);
+  background: var(--teal);
+  color: var(--white);
+  border-color: var(--white);
 }
 
 /* ================= RIGHT ================= */
@@ -68,19 +72,11 @@
   position: relative;
   width: 100%;
   height: 100%;
-  overflow: hidden;
 }
 
-.slide {
+.image {
   object-fit: cover;
-  opacity: 0;
-  transition: opacity 1.8s ease-in-out;
 }
-
-.active {
-  opacity: 1;
-}
-
 
 /* ================= RESPONSIVE ================= */
 
@@ -90,7 +86,7 @@
   }
 
   .right {
-    height: 60vh;
+    height: max-content;
   }
 
   .left {

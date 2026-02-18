@@ -7,7 +7,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: var(--font-noto), system-ui, sans-serif;
-  background: var(--beige);
+  background: var(--white);
   color: var(--text);
   scroll-behavior: smooth;
 }

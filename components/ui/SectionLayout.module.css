@@ -1,0 +1,21 @@
+.section {
+  padding: 6rem 2rem;
+  background: white;
+}
+
+.alt {
+  background: #f8f7f5;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: clamp(2rem, 3vw, 2.6rem);
+  color: var(--blue);
+  margin-bottom: 3rem;
+  text-align: center;
+  line-height: 1.3;
+}
