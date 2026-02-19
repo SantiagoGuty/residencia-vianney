@@ -85,7 +85,7 @@ export default function Navbar() {
 
         <a
           className={styles.whatsappBtn}
-          href="https://wa.me/573102102404"
+          href="https://wa.me/573017230484"
           target="_blank"
           rel="noopener noreferrer"
           onClick={closeMenu}

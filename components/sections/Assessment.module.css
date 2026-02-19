@@ -41,6 +41,13 @@
   padding: 2rem;
   border-radius: var(--radius-md);
   border: 1px solid rgba(25, 100, 126, 0.08);
+  transition: transform 0.3s var(--ease-soft),
+              box-shadow 0.3s var(--ease-soft);
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.06);
 }
 
 .card h3 {
@@ -59,27 +66,74 @@
 .highlight {
   background: linear-gradient(
     135deg,
-    rgba(40, 175, 176, 0.08),
-    rgba(138, 186, 78, 0.08)
+    var(--green),
+    var(--teal)
   );
   padding: 3rem;
   border-radius: var(--radius-lg);
+  color: var(--white);
+  box-shadow: 0 20px 40px rgba(40, 175, 176, 0.25);
+  position: relative;
+  overflow: hidden;
+}
+
+.highlight:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s var(--ease-soft),
+              box-shadow 0.3s var(--ease-soft);
+}
+
+/* Subtle light overlay */
+.highlight::after {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+  top: -40%;
+  right: -40%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(
+    circle,
+    rgba(255,255,255,0.15) 0%,
+    transparent 60%
+  );
 }
 
 .highlight h3 {
-  font-size: 1.4rem;
-  color: var(--blue);
+  font-size: 1.6rem;
+  color: var(--white);
   margin-bottom: 1rem;
 }
 
 .highlight p {
   font-size: 1.1rem;
   line-height: 1.7;
-  color: var(--dark);
+  color: var(--white);
 }
+
 
 @media (max-width: 900px) {
   .wrapper {
     grid-template-columns: 1fr;
+  }
+
+  /* 2x2 grid */
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .card {
+    padding: 1.5rem;
+  }
+
+  /* Highlight below grid */
+  .right {
+    margin-top: 3rem;
+  }
+
+    .highlight {
+    padding: 2.5rem 2rem;
+    transform: scale(1.02);
   }
 }

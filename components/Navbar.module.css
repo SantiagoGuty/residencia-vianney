@@ -2,7 +2,6 @@
   background: var(--white);
   border-top: 7px solid var(--green);
   box-shadow: 0 6px 18px rgba(0,0,0,0.04);
-  position: sticky;
   top: 0;
   z-index: 1000;
 }
