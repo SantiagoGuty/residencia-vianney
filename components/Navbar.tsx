@@ -1,12 +1,16 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
 import styles from "./Navbar.module.css";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
+  const pathname = usePathname();
 
+  // Lock scroll when menu open
   useEffect(() => {
     document.body.style.overflow = open ? "hidden" : "";
     return () => {
@@ -14,12 +18,18 @@ export default function Navbar() {
     };
   }, [open]);
 
+  // Auto close on route change
+  useEffect(() => {
+    setOpen(false);
+  }, [pathname]);
+
   const closeMenu = () => setOpen(false);
+
 
   return (
     <header className={styles.navbar}>
       <div className={styles.inner}>
-        <a href="#inicio" className={styles.logoWrapper} onClick={closeMenu}>
+        <a href="/" className={styles.logoWrapper} onClick={closeMenu}>
           <Image
             src="/logo.png"
             alt="Geriátrico Jean Baptiste Marie Vianey"
@@ -32,12 +42,12 @@ export default function Navbar() {
 
         {/* Desktop links */}
         <nav className={styles.links} aria-label="Navegación principal">
-          <a href="#servicios">Servicios</a>
-          <a href="#modalidades">Modalidades</a>
-          <a href="#equipo">Equipo</a>
-          <a href="#contacto" className={styles.contactButton}>
-            Contacto
-          </a>
+          <Link href="/servicios">Servicios</Link>
+          <Link href="/quienes-somos">Quienes Somos</Link>
+          <Link href="/contactanos" className={styles.contactButton}>
+            Contactanos
+          </Link>
+
         </nav>
 
         {/* ✅ Tolima-style burger (same SVG + same class pattern) */}
@@ -74,12 +84,12 @@ export default function Navbar() {
         className={`${styles.mobileMenu} ${open ? styles.mobileMenuOpen : ""}`}
         aria-label="Menú móvil"
       >
-        <a href="#servicios" onClick={closeMenu}>Servicios</a>
-        <a href="#modalidades" onClick={closeMenu}>Modalidades</a>
-        <a href="#equipo" onClick={closeMenu}>Equipo</a>
-        <a href="#contacto" onClick={closeMenu} className={styles.mobileCTA}>
-          Contacto
-        </a>
+          <Link href="/servicios" onClick={closeMenu}>Servicios</Link>
+          <Link href="/quienes-somos" onClick={closeMenu}>Quienes Somos</Link>
+          <Link href="/contactanos" onClick={closeMenu} className={styles.mobileCTA}>
+            Contactanos
+          </Link>
+
 
         <div className={styles.mobileDivider} />
 

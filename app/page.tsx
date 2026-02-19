@@ -19,6 +19,7 @@ export default function Home() {
 
   return (
     <main>
+      <div className="home">
       <HeroSlider />
       <Purpose />
       <Classification />
@@ -29,6 +30,7 @@ export default function Home() {
       <Modalities />
       <ContactBand />
       <Footer />
+      </div>
     </main>
   );
 }

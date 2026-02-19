@@ -1,0 +1,83 @@
+.page {
+  min-height: 100vh;
+  background: var(--white);
+}
+
+/* ===== Hero ===== */
+
+.hero {
+  background: linear-gradient(to right, var(--blue), #2c6f8f);
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: clamp(2.4rem, 4vw, 3rem);
+  color: var(--white);
+  margin-bottom: 0.8rem;
+}
+
+.hero p {
+  color: rgba(255,255,255,0.9);
+  font-size: 1.1rem;
+}
+
+/* ===== Container ===== */
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 5rem 2rem;
+}
+
+/* ===== Layout ===== */
+
+.content {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+/* ===== Text ===== */
+
+.text h2 {
+  color: var(--blue);
+  margin-bottom: 1.5rem;
+  font-size: 1.6rem;
+}
+
+.text p {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: var(--dark);
+  margin-bottom: 1.8rem;
+}
+
+/* ===== Image ===== */
+
+.imageWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.image {
+  width: 100%;
+  max-width: 500px;
+  border-radius: var(--radius-lg);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+  object-fit: cover;
+}
+
+/* ===== Responsive ===== */
+
+@media (max-width: 900px) {
+  .content {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .text {
+    text-align: center;
+  }
+}

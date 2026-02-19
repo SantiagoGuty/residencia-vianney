@@ -1,0 +1,87 @@
+.page {
+  min-height: 100vh;
+  background: var(--white);
+}
+
+/* Hero */
+
+.hero {
+  background: linear-gradient(to right, var(--blue), #2c6f8f);
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: clamp(2.4rem, 4vw, 3rem);
+  color: var(--white);
+  margin-bottom: 0.8rem;
+}
+
+.hero p {
+  color: rgba(255,255,255,0.9);
+  font-size: 1.1rem;
+}
+
+/* Container */
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 5rem 2rem;
+}
+
+/* Info */
+
+.info {
+  display: grid;
+  gap: 3rem;
+  margin-bottom: 4rem;
+}
+
+.block {
+  padding: 2rem;
+  border-radius: var(--radius-lg);
+  background: #f7f9fb;
+  border-left: 4px solid var(--green);
+}
+
+.block h3 {
+  color: var(--blue);
+  margin-bottom: 1rem;
+}
+
+.block p {
+  color: var(--dark);
+  font-size: 1.15rem;
+  line-height: 1.8;
+}
+
+/* CTA */
+
+.cta {
+  text-align: center;
+}
+
+.button {
+  display: inline-block;
+  padding: 1rem 2.5rem;
+  border-radius: 40px;
+  background: var(--green);
+  color: var(--dark);
+  text-decoration: none;
+  font-weight: 700;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+  .block p {
+    text-align: center;
+  }
+}

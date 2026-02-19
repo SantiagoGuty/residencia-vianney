@@ -4,6 +4,8 @@
   box-shadow: 0 6px 18px rgba(0,0,0,0.04);
   top: 0;
   z-index: 1000;
+    position: sticky;   /* ✅ change to this */
+
 }
 
 .inner {
@@ -15,6 +17,20 @@
   align-items: center;
   position: relative;
 }
+
+.links a,
+.mobileMenu a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.links a:focus-visible,
+.mobileMenu a:focus-visible {
+  outline: 2px solid var(--green);
+  outline-offset: 4px;
+  border-radius: 6px;
+}
+
 
 .logoWrapper {
   display: flex;
