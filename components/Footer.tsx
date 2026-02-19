@@ -52,7 +52,7 @@ export default function Footer() {
         {/* WHATSAPP ROW (SECOND FLOOR) */}
         <div className={styles.whatsappRow}>
           <a
-            href="https://wa.me/573102102404"
+            href="https://wa.me/573017230484"
             target="_blank"
             rel="noopener noreferrer"
             className={styles.whatsapp}
