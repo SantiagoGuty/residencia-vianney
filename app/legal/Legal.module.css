@@ -1,0 +1,40 @@
+.page {
+  min-height: 100vh;
+  background: var(--white);
+}
+
+.hero {
+  background: linear-gradient(to right, var(--blue), #2c6f8f);
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: clamp(2.4rem, 4vw, 3rem);
+  color: var(--white);
+  margin-bottom: 0.8rem;
+}
+
+.hero p {
+  color: rgba(255,255,255,0.9);
+  font-size: 1.1rem;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 5rem 2rem;
+}
+
+.text h2 {
+  color: var(--blue);
+  margin-bottom: 1rem;
+  margin-top: 3rem;
+  font-size: 1.4rem;
+}
+
+.text p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--dark);
+}

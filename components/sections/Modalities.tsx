@@ -28,7 +28,7 @@ export default function Modalities() {
             <h3>Adulto Día</h3>
             <p>
               Programa por horas enfocado en estimulación cognitiva,
-              socialización segura y acompañamiento familiar.
+              socialización segura y acompañamiento familiar: club de lectura, club de idiomas y otras actividades
             </p>
           </div>
 

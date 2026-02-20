@@ -20,7 +20,7 @@ export default function QuienesSomos() {
             <h2>Nuestra Filosofía</h2>
 
             <p>
-              En el Geriátrico Jean Baptiste María Vianney creemos que el cuidado
+              En el Club House Jean Baptiste María Vianney creemos que el cuidado
               del adulto mayor va más allá de la atención médica. Nuestra misión
               es brindar un acompañamiento integral que combine criterio clínico,
               calidez humana y respeto por la dignidad de cada persona.

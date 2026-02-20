@@ -1,60 +1,86 @@
 .footer {
-  background: white;
+  position: relative;
+  background: var(--white);
   color: var(--blue);
-  margin-top: var(--section-padding);
+  overflow: hidden;
 }
 
-/* MAIN GRID */
+/* Unique geometric background using brand tones */
+
+.footer::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 15% 25%, rgba(138,186,78,0.3), transparent 50%),
+    radial-gradient(circle at 85% 75%, rgba(40,175,176,0.3), transparent 50%),
+    linear-gradient(135deg, rgba(255,255,255,0.3) 1px, transparent 1px);
+  background-size: 600px 600px, 500px 500px, 60px 60px;
+  opacity: 0.4;
+  pointer-events: none;
+}
+
 .inner {
+  position: relative;
+  z-index: 2;
+
   max-width: 1200px;
   margin: 0 auto;
-  padding: 4rem 2rem 3rem;
+  padding: 5rem 2rem 0rem;
+
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;
   gap: 4rem;
-  position: relative;
 }
 
-/* ========================= */
+/* ===================== */
 /* BRAND */
-/* ========================= */
-
-.brandColumn {
-  display: flex;
-  flex-direction: column;
-}
+/* ===================== */
 
 .logoWrapper {
   margin-bottom: 2rem;
-  cursor: pointer;
 }
 
 .logo {
-  width: 260px;
+  width: 240px;
   height: auto;
   transition: transform 0.4s var(--ease-soft);
 }
-
 
 .logo:hover {
   transform: scale(1.05);
 }
 
 .description {
+  max-width: 420px;
   line-height: 1.7;
   margin-bottom: 2rem;
   color: var(--blue);
-  max-width: 420px;
 }
 
-/* ========================= */
+.backToTop {
+  background: transparent;
+  border: 1px solid rgba(250,255,248,0.4);
+  padding: 0.8rem 1.4rem;
+  color: var(--white);
+  cursor: pointer;
+  border-radius: var(--radius-sm);
+  transition: all 0.3s var(--ease-soft);
+}
+
+.backToTop:hover {
+  background: rgba(138,186,78,0.15);
+  border-color: var(--green);
+}
+
+/* ===================== */
 /* LINKS */
-/* ========================= */
+/* ===================== */
 
 .linksColumn h4 {
   margin-bottom: 1.2rem;
   font-weight: 600;
-  color: var(--blue);
+  color: var(--green);
 }
 
 .linksColumn a {
@@ -70,35 +96,26 @@
   transform: translateX(4px);
 }
 
-/* ========================= */
-/* WHATSAPP CENTER ROW */
-/* ========================= */
+/* ===================== */
+/* WHATSAPP */
+/* ===================== */
 
 .whatsappRow {
-  grid-column: 2 / 4;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  margin-top: -11.5rem; /* pulls it upward */
+  text-align: center;
+  padding-bottom: 1.5rem;
 }
 
 .whatsapp img {
-  width: 70px !important;
-  height: auto;
-}
-
-
-.whatsapp {
   transition: transform 0.3s var(--ease-soft);
 }
 
-.whatsapp:hover {
+.whatsapp:hover img {
   transform: translateY(-6px) scale(1.1);
 }
 
-/* ========================= */
+/* ===================== */
 /* BOTTOM STRIP */
-/* ========================= */
+/* ===================== */
 
 .bottomStrip {
   background: var(--green);
@@ -108,22 +125,14 @@
   color: var(--white);
 }
 
-/* ========================= */
+/* ===================== */
 /* RESPONSIVE */
-/* ========================= */
+/* ===================== */
 
 @media (max-width: 900px) {
   .inner {
     grid-template-columns: 1fr;
     gap: 3rem;
-  }
-
-  .whatsappRow {
-    grid-column: auto;
-  }
-
-  .brandColumn {
-    align-items: center;
     text-align: center;
   }
 

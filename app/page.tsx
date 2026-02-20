@@ -29,7 +29,6 @@ export default function Home() {
       <Services />
       <Modalities />
       <ContactBand />
-      <Footer />
       </div>
     </main>
   );

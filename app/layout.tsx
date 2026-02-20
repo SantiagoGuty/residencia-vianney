@@ -1,5 +1,7 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import ScrollToTop from "@/components/ScrollToTop";
+
 import "./globals.css";
 import { Noto_Sans_Display } from "next/font/google";
 
@@ -17,6 +19,7 @@ export default function RootLayout({
     <html lang="es">
       <body className={noto.className}>
         <Navbar />
+        <ScrollToTop />
         {children}
         <Footer />
       </body>
