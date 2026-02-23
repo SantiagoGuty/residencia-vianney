@@ -9,9 +9,8 @@ export default function ContactBand() {
         <div className={styles.item}>
           <Image src="/icons/medicina.png" alt="Ubicación" width={40} height={40} />
           <p>
-            Cra 49C # 80 – 125,<br />
-            Consultorio 515,<br />
-            Continental Medical Center
+            Carrera 55 No 132-37<br />
+            Villa Campeste, Puerto Colombia
           </p>
         </div>
 
@@ -25,8 +24,8 @@ export default function ContactBand() {
         <div className={styles.item}>
           <Image src="/icons/fisioterapia.png" alt="Horarios" width={40} height={40} />
           <p>
-            Lunes – Viernes: 8AM – 8PM<br />
-            Sábados: 10AM – 8PM
+            Lunes – Viernes: 8AM – 12PM<br />
+            Sábados: 8AM – 1PM
           </p>
         </div>
 

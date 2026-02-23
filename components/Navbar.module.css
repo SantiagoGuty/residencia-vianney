@@ -41,7 +41,7 @@
 
 .logo {
   height: auto;
-  width: 167px;
+  width: 240px;
   transition: transform 0.3s var(--ease-soft);
 }
 
@@ -109,7 +109,7 @@
 }
 
 /* Same as Tolima: render it at 80x80 */
-.menuButton svg {
+.menuButton png {
   width: 80px;
   height: 80px;
 }
