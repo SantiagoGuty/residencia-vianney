@@ -7,21 +7,21 @@ const images = [
     alt: "Piscina exterior con área de descanso techada y columnas",
     caption: "Zona exterior con piscina y área de descanso."
   },
+
   {
-    src: "/images/muebles-vianney1.jpeg",
-    alt: "Área social con muebles cómodos y vista al jardín",
-    caption: "Espacio social diseñado para el bienestar."
+    src: "/images/piscina-vianney-vista1.jpeg",
+    alt: "Vista amplia de la piscina con entorno natural",
+    caption: "Piscina recreativa."
   },
   {
     src: "/images/entrada-casa-vianney1.jpeg",
     alt: "Vista amplia del club con entorno natural",
     caption: "Ambiente tranquilo rodeado de naturaleza."
   },
-
-{
-    src: "/images/piscina-vianney-vista1.jpeg",
-    alt: "Vista amplia de la piscina con entorno natural",
-    caption: "Piscina recreativa."
+  {
+    src: "/images/muebles-vianney1.jpeg",
+    alt: "Área social con muebles cómodos y vista al jardín",
+    caption: "Espacio social diseñado para el bienestar."
   },
 
 ];

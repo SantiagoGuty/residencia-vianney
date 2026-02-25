@@ -43,9 +43,9 @@ export default function Navbar() {
         {/* Desktop links */}
         <nav className={styles.links} aria-label="Navegación principal">
           <Link href="/servicios">Servicios</Link>
-          <Link href="/quienes-somos">Quienes Somos</Link>
+          <Link href="/quienes-somos">Quiénes Somos</Link>
           <Link href="/contactanos" className={styles.contactButton}>
-            Contactanos
+            Contáctanos
           </Link>
 
         </nav>

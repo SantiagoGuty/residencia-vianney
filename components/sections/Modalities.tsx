@@ -25,6 +25,14 @@ export default function Modalities() {
 
           <div className={styles.card}>
             <div className={styles.accent}></div>
+            <h3>Servicio de hotel</h3>
+            <p>
+              Servicio por días o tiempos complementarios con todo incluido,  alimentación y actividades de estimulación cognitiva, socialización, necesidades clínicas y emocionales.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <div className={styles.accent}></div>
             <h3>Adulto Día</h3>
             <p>
               Programa por horas enfocado en estimulación cognitiva,

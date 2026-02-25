@@ -31,7 +31,7 @@ export default function ContactBand() {
 
         <div className={styles.item}>
           <Image src="/icons/enfermeria.png" alt="Redes sociales" width={40} height={40} />
-          <p>Facebook – Instagram – LinkedIn</p>
+          <p>Facebook – Instagram</p>
         </div>
 
       </div>

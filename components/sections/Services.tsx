@@ -5,9 +5,9 @@ export default function Services() {
   const services = [
     { icon: "/icons/neurologia.png", title: "Neurología y Psiquiatría" },
     { icon: "/icons/psicologia.png", title: "Psicología" },
-    { icon: "/icons/medicina.png", title: "Medicina General" },
+    { icon: "/icons/medicina.png", title: "Cuidado sanitario" },
     { icon: "/icons/enfermeria.png", title: "Enfermería 24H" },
-    { icon: "/icons/fisioterapia.png", title: "Fisioterapia" },
+    { icon: "/icons/fisioterapia.png", title: "Terapia ocupacional" },
     { icon: "/icons/nutricion.png", title: "Nutrición y Dietética" },
   ];
 
