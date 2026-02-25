@@ -11,7 +11,7 @@ import Emotional from "@/components/sections/Emotional";
 import Modalities from "@/components/sections/Modalities";
 import Services from "@/components/sections/Services";
 import ContactBand from "@/components/sections/ContactBand";
-import Footer from "@/components/Footer";
+import ClubGallery from "@/components/sections/ClubGallery";
 
 
 export default function Home() {
@@ -27,6 +27,7 @@ export default function Home() {
       <Emotional />
       <Cognitive />
       <Services />
+      <ClubGallery />
       <Modalities />
       <ContactBand />
       </div>
