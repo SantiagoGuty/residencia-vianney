@@ -32,7 +32,7 @@ export default function Navbar() {
         <a href="/" className={styles.logoWrapper} onClick={closeMenu}>
           <Image
             src="/logo.png"
-            alt="Geriátrico Jean Baptiste Marie Vianey"
+            alt="Club House Jean Batista Marie Vianey"
             width={160}
             height={160}
             className={styles.logo}

@@ -9,7 +9,7 @@ export default function Purpose() {
           <h2>Cuidamos con humanidad, trabajamos con criterio clínico</h2>
 
           <p>
-            En el Club House Jean Baptiste Marie Vianney ofrecemos una atención
+            En el Club House Jean Batista Marie Vianey ofrecemos una atención
             humana y profesional, centrada en la persona y en su familia.
           </p>
 

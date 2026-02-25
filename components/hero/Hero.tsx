@@ -8,7 +8,7 @@ export default function Hero() {
     <section className={styles.hero} aria-label="Sección principal">
       <div className={styles.left}>
         <h1>
-          Club House Vianney, diseñado con criterio clínico y calidez humana
+          Club House Vianey, diseñado con criterio clínico y calidez humana
         </h1>
 
         <p>

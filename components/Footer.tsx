@@ -89,7 +89,7 @@ export default function Footer() {
 
       {/* Bottom Strip */}
       <div className={styles.bottomStrip}>
-        © {new Date().getFullYear()} Club House Jean Baptiste Marie Vianney. Todos los derechos reservados.
+        © {new Date().getFullYear()} Club House Jean Batista Marie Vianey. Todos los derechos reservados.
       </div>
     </footer>
   );
