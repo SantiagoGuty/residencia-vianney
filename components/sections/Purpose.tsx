@@ -6,7 +6,7 @@ export default function Purpose() {
     <section className={styles.background}>
       <div className="container">
         <div className={styles.content}>
-          <h2>Cuidamos con humanidad, trabajamos con criterio clínico</h2>
+          <h2>Más que cuidar, acompañamos cada historia de vida</h2>
 
           <p>
             En el Club House Jean Batista Marie Vianey ofrecemos una atención

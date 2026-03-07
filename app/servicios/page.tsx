@@ -18,16 +18,16 @@ export default function Servicios() {
           <div className={styles.card}>
             <h3>Valoración Integral</h3>
             <p>
-              Evaluación médica completa que permite diseñar un plan de cuidado
-              personalizado según cada necesidad.
+                Evaluación inicial interdisciplinaria que incluye valoración inicial
+                por  neuropsicológica, permitiendo diseñar un plan de cuidado personalizado según las necesidades del adulto mayor
             </p>
           </div>
 
           <div className={styles.card}>
             <h3>Estimulación Cognitiva</h3>
             <p>
-              Actividades orientadas a fortalecer memoria, atención y
-              funciones cognitivas.
+              Actividades diseñadas para mantener la mente activa mediante ejercicios de memoria, lectura, escritura, 
+              juegos mentales y espacios de conversación que fortalecen la atención, el razonamiento y el bienestar emocional.
             </p>
           </div>
 
@@ -39,9 +39,29 @@ export default function Servicios() {
           </div>
 
           <div className={styles.card}>
-            <h3>Atención Médica Continua</h3>
+            <h3>Atención Profesional Continua</h3>
             <p>
-              Seguimiento profesional constante y protocolos de seguridad.
+              Supervisión profesional constante con terapia ocupacional, 
+              fisioterapia y psicología para preservar la autonomía y funcionalidad del adulto mayor.           
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>Servicios para el Bienestar del Adulto Mayor</h3>
+            <p>
+              • Hidroterapia <br />
+              • Servicios de enfermería 24/7 <br />
+              • Nutrición personalizada
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>Actividades para residentes internos y Adulto Día</h3>
+            <p>
+              • Club de lectura <br />
+              • Club de escritura<br />
+              • Club de idiomas<br />
+              • Talleres grupales para familiares
             </p>
           </div>
 

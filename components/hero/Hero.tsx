@@ -8,11 +8,11 @@ export default function Hero() {
     <section className={styles.hero} aria-label="Sección principal">
       <div className={styles.left}>
         <h1>
-          Club House Vianey, diseñado con criterio clínico y calidez humana
-        </h1>
+        Club house Vianey, cuidados integral para el adulto mayor, con profesionalismo y calidez humana        </h1>
 
         <p>
-          Atención especializada, personalizada y centrada en la calidad de vida. Nuestro equipo de profesionales se dedica a brindar cuidado integral, promoviendo bienestar físico, emocional y social en Barranquilla, Colombia.
+En Club House Vianey ofrecemos un acompañamiento integral para el adulto mayor, combinando atención profesional con un trato humano y cercano.
+Creamos un entorno seguro y tranquilo donde cada persona puede mantenerse activa, acompañada y emocionalmente conectada, promoviendo su bienestar físico, cognitivo y social.
         </p>
 
         <div className={styles.buttons}>

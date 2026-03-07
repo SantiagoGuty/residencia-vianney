@@ -36,8 +36,7 @@ export default function Footer() {
           </Link>
 
           <p className={styles.description}>
-            Atención humana y profesional centrada en la persona,
-            acompañando cada etapa con criterio clínico y calidez.
+            Un lugar donde el cuidado profesional y la calidez humana se unen para acompañar cada etapa de la vida.
           </p>
 
           <button className={styles.backToTop} onClick={scrollTop}>

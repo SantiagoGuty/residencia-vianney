@@ -6,7 +6,7 @@ export default function Contactanos() {
 
       <div className={styles.hero}>
         <h1>Contáctanos</h1>
-        <p>Estamos aquí para acompañarte</p>
+        <p>Nuestro equipo está listo para brindarte orientación y acompañarte en cada paso.</p>
       </div>
 
       <section className={styles.container}>
@@ -16,9 +16,9 @@ export default function Contactanos() {
           <div className={styles.block}>
             <h3>Ubicación</h3>
             <p>
-              Cra 49C # 80 – 125 <br />
-              Consultorio 515 <br />
-              Continental Medical Center
+              Carrera 55 No. 132-37,  <br />
+              Villa Campestre, <br />
+              Puerto Colombia, Atlántico, Colombia
             </p>
           </div>
 
@@ -30,8 +30,9 @@ export default function Contactanos() {
           <div className={styles.block}>
             <h3>Horarios</h3>
             <p>
-              Lunes – Viernes: 8AM – 8PM <br />
-              Sábados: 10AM – 8PM
+             De lunes a viernes: 8:00 AM -12:00PM y de 1:00 PM – 5:00 PM <br/>
+              Sábados de 8:00 AM -12:00PM
+              <br />
             </p>
           </div>
 
