@@ -50,6 +50,9 @@ export default function Contactanos() {
         </div>
 
       </section>
+
+      {/* Modalidades de Atención */}
+
     </main>
   );
 }

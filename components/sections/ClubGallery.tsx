@@ -14,7 +14,7 @@ const images = [
     caption: "Piscina recreativa."
   },
   {
-    src: "/images/entrada-casa-vianney1.jpeg",
+    src: "/images/entrada_casa_vianney_blanca_con_piso_rojo.png",
     alt: "Vista amplia del club con entorno natural",
     caption: "Ambiente tranquilo rodeado de naturaleza."
   },

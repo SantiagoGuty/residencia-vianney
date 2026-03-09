@@ -78,6 +78,49 @@ export default function Servicios() {
         </div>
 
       </section>
+
+            <section className={styles.modalidades}>
+        <div className={styles.modalidadesInner}>
+          <h2 className={styles.modalidadesTitle}>Modalidades de atención</h2>
+          <div className={styles.modalidadesGrid}>
+
+            <div className={styles.modalidadCard}>
+              <div className={styles.modalidadNumber}>01</div>
+              <h3>Internación completa</h3>
+              <span className={styles.badge}>24/7</span>
+              <p>
+                Acompañamiento permanente en un entorno tranquilo y seguro, con supervisión
+                profesional y acceso a todos los servicios y actividades de bienestar y
+                estimulación ofrecidos en nuestro Club House.
+              </p>
+            </div>
+
+            <div className={styles.modalidadCard}>
+              <div className={styles.modalidadNumber}>02</div>
+              <h3>Adulto Día</h3>
+              <span className={styles.badge}>Diurno</span>
+              <p>
+                Jornadas diseñadas para estimular la mente y el bienestar físico, fomentar
+                la socialización y promover la calidad de vida del adulto mayor, con acceso
+                a los servicios y actividades de estimulación, acompañamiento y cuidado
+                ofrecidos en nuestro Club House durante el día.
+              </p>
+            </div>
+
+            <div className={styles.modalidadCard}>
+              <div className={styles.modalidadNumber}>03</div>
+              <h3>Estancia temporal</h3>
+              <span className={styles.badge}>Flexible</span>
+              <p>
+                Alojamiento por días o temporadas en un entorno seguro y acogedor, con
+                acompañamiento profesional y acceso a los servicios y actividades de
+                bienestar y estimulación ofrecidos en nuestro Club House.
+              </p>
+            </div>
+
+          </div>
+        </div>
+      </section>
     </main>
   );
 }
