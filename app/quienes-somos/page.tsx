@@ -42,7 +42,7 @@ export default function QuienesSomos() {
           {/* Image */}
           <div className={styles.imageWrapper}>
             <Image
-              src="/images/familia.jpg"
+              src="/images/familia consteña en el malecon en barranquilla.png"
               alt="Adulto mayor compartiendo con su familia en un entorno seguro y acogedor"
               width={500}
               height={380}

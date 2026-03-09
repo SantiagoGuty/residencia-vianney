@@ -17,10 +17,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="es">
-      <body className={noto.className}>
+      <body className={noto.className} suppressHydrationWarning>
         <Navbar />
         <ScrollToTop />
-        {children}
+          {children}
         <Footer />
       </body>
     </html>

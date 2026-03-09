@@ -75,8 +75,14 @@
   border-radius: var(--radius-lg);
   box-shadow: 0 20px 40px rgba(0,0,0,0.08);
   object-fit: cover;
+  transition: all 0.3s var(--ease-soft);
 }
 
+.image:hover{
+  box-shadow: 0 30px 60px rgba(0,0,0,0.12);
+  transform: translateY(-4px);
+  transition: all 0.3s var(--ease-soft);
+}
 /* Responsive */
 
 @media (max-width: 900px) {

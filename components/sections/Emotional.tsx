@@ -35,7 +35,7 @@ export default function Emotional() {
 
         <div className={styles.right}>
           <Image
-            src="/images/emotional.jpg"
+            src="/images/emocional hija y madre viendo album de fotos.png"
             alt="Profesional acompañando emocionalmente a adulto mayor"
             fill
             className={styles.image}
