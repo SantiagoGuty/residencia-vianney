@@ -1,36 +1,22 @@
-"use client";
+// app/page.tsx  ← no "use client" here
+import type { Metadata } from "next";
+import HomeClient from "./HomeClient";
 
-import useReveal from "@/components/ui/useReveal";
-
-import HeroSlider from "@/components/hero/Hero";
-import Purpose from "@/components/sections/Purpose";
-import Assessment from "@/components/sections/Assessment";
-import Classification from "@/components/sections/Classification";
-import Cognitive from "@/components/sections/Cognitive";
-import Emotional from "@/components/sections/Emotional";
-import Modalities from "@/components/sections/Modalities";
-import Services from "@/components/sections/Services";
-import ContactBand from "@/components/sections/ContactBand";
-import ClubGallery from "@/components/sections/ClubGallery";
-
+export const metadata: Metadata = {
+  title: "Club House Vianey | Cuidado Integral para el Adulto Mayor",
+  description:
+    "Ofrecemos internación, adulto día y estancia temporal para el adulto mayor en Puerto Colombia. Atención profesional, estimulación cognitiva y acompañamiento emocional. Puerto Colombia, Atlantico, Colombia.",
+  openGraph: {
+    title: "Club House Vianey | Cuidado Integral para el Adulto Mayor",
+    description:
+      "Entorno seguro, profesional y cálido para el adulto mayor. Internación 24/7, Adulto Día y estancia temporal.",
+    url: "https://clubhousevianey.com",
+    siteName: "Club House Jean Batista Marie Vianey",
+    locale: "es_CO",
+    type: "website",
+  },
+};
 
 export default function Home() {
-  useReveal(); // 👈 activates global smooth reveals
-
-  return (
-    <main>
-      <div className="home">
-      <HeroSlider />
-      <Purpose />
-      <Classification />
-      <Assessment />
-      <Emotional />
-      <Cognitive />
-      <Services />
-      <ClubGallery />
-      <Modalities />
-      <ContactBand />
-      </div>
-    </main>
-  );
+  return <HomeClient />;
 }
