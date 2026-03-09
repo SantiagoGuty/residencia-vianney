@@ -33,8 +33,8 @@ export default function Navbar() {
           <Image
             src="/logo.png"
             alt="Club House Jean Batista Marie Vianey"
-            width={160}
-            height={160}
+            width={210}   
+            height={70}   
             className={styles.logo}
             priority
           />
