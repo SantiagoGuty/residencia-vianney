@@ -41,7 +41,7 @@
 
 .logo {
   height: auto;
-  width: 240px;
+  width: 210px;
   transition: transform 0.3s var(--ease-soft);
 }
 

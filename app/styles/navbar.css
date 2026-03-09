@@ -1,12 +1,12 @@
 .navbar {
   background: var(--beige);
-  padding: 1.5rem 1rem;
+  padding: 0rem 0rem;
   text-align: center;
 }
 
 .navbar-logo img {
-  width: 150px;
-  margin-bottom: 0.75rem;
+  width: 10px;
+  margin-bottom: 0rem;
 }
 
 .navbar-links {
