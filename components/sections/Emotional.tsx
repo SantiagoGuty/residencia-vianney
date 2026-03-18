@@ -1,4 +1,4 @@
-import styles from "./Emotional.module.css";
+import styles from "../../app/styles/Emotional.module.css";
 import Image from "next/image";
 
 export default function Emotional() {
@@ -15,9 +15,9 @@ export default function Emotional() {
           </h2>
 
           <p className={styles.description}>
-            Acompañamos procesos de adaptación, fortalecemos la autoestima
-            y brindamos herramientas prácticas para mantener equilibrio
-            emocional en cada etapa.
+            Acompañamos los procesos de adaptación, fortalecemos la autoestima y 
+            brindamos herramientas prácticas para mantener el equilibrio emocional 
+            en cada etapa.
           </p>
 
           <div className={styles.features}>

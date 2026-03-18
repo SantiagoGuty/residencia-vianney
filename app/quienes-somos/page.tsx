@@ -1,4 +1,4 @@
-import styles from "./QuienesSomos.module.css";
+import styles from "../styles/QuienesSomos.module.css";
 import Image from "next/image";
 
 export default function QuienesSomos() {

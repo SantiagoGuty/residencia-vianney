@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
-import styles from "./Navbar.module.css";
+import styles from "../app/styles/Navbar.module.css";
 import Image from "next/image";
 import Link from "next/link";
 

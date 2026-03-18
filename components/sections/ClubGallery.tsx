@@ -1,4 +1,4 @@
-import styles from "./ClubGallery.module.css";
+import styles from "../../app/styles/ClubGallery.module.css";
 import Image from "next/image";
 
 const images = [

@@ -1,5 +1,5 @@
 import SectionLayout from "@/components/ui/SectionLayout";
-import styles from "./Cognitive.module.css";
+import styles from "../../app/styles/Cognitive.module.css";
 
 export default function Cognitive() {
   return (
@@ -12,34 +12,38 @@ export default function Cognitive() {
           <h2>Mente activa, autonomía fortalecida</h2>
 
           <p className={styles.intro}>
-            Diseñamos planes personalizados para preservar la independencia,
-            fortalecer funciones mentales y acompañar cada etapa con criterio
-            clínico y humanidad.
+            A través de nuestras actividades de estimulación cognitiva y 
+            acompañamiento profesional, ayudamos a los adultos mayores a 
+            mantenerse activos, fortalecer sus capacidades y conservar su 
+            independencia en la vida diaria.
           </p>
         </div>
 
         <div className={styles.pillars}>
           <div className={styles.card}>
             <h3>Memoria</h3>
+            <span className={styles.subtitle}>Fortalecimiento de las funciones cognitivas</span>
             <p>
-              Actividades estructuradas para reforzar memoria inmediata,
-              reciente y a largo plazo.
+              Actividades que estimulan la memoria, la atención y el
+              pensamiento para afrontar mejor las situaciones del día a día.
             </p>
           </div>
 
           <div className={styles.card}>
             <h3>Atención</h3>
+            <span className={styles.subtitle}>Agilidad mental y bienestar emocional</span>
             <p>
-              Ejercicios prácticos que fortalecen concentración,
-              enfoque y capacidad de respuesta.
+              Ejercicios que mantienen la mente activa, favorecen la
+              interacción social y promueven el bienestar emocional.
             </p>
           </div>
 
           <div className={styles.card}>
             <h3>Orientación</h3>
+            <span className={styles.subtitle}>Fortalecimiento de las funciones cognitivas</span>
             <p>
-              Trabajo progresivo en orientación temporal, espacial
-              y personal.
+              Actividades que estimulan la memoria, la atención y el
+              pensamiento para afrontar mejor las situaciones del día a día.
             </p>
           </div>
         </div>

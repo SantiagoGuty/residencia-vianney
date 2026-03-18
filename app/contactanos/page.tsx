@@ -28,6 +28,11 @@ export default function Contactanos() {
           </div>
 
           <div className={styles.block}>
+            <h3>Correo electrónico</h3>
+            <p>contacto@clubhousevianey.com</p>
+          </div>
+
+          <div className={styles.block}>
             <h3>Horarios</h3>
             <p>
              De lunes a viernes: 8:00 AM -12:00PM y de 1:00 PM – 5:00 PM <br/>

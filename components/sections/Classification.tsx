@@ -1,4 +1,4 @@
-import styles from "./Classification.module.css";
+import styles from "../../app/styles/Classification.module.css";
 
 export default function Classification() {
   return (
@@ -8,10 +8,12 @@ export default function Classification() {
 
         <div className={styles.header}>
           <span className={styles.tag}>Evaluación personalizada</span>
-          <h2>Clasificación funcional (G1 – G3)</h2>
+          <h2>Nivel de acompañamiento</h2>
           <p>
-            Valoramos el nivel funcional de cada residente para diseñar
-            un plan de atención clínico, humano y adaptado a sus necesidades.
+            Con base en la valoración integral realizada, nuestro equipo define el
+            nivel de acompañamiento más adecuado para cada residente. Esto nos permite
+            ofrecer un cuidado ajustado a su grado de autonomía y a las necesidades de
+            apoyo que requiera en su vida diaria.
           </p>
         </div>
 
@@ -19,7 +21,7 @@ export default function Classification() {
 
           <div className={`${styles.card} ${styles.g1}`}>
             <div className={styles.badge}>G1</div>
-            <h3>Muy funcional</h3>
+            <h3>Autonomía activa</h3>
             <p>
               Independencia o apoyos mínimos.
               Enfoque en prevención, autonomía
@@ -29,7 +31,7 @@ export default function Classification() {
 
           <div className={`${styles.card} ${styles.g2}`}>
             <div className={styles.badge}>G2</div>
-            <h3>Funcional con apoyos</h3>
+            <h3>Acompañamiento asistido</h3>
             <p>
               Acompañamiento moderado enfocado
               en seguridad, estimulación y
@@ -39,7 +41,7 @@ export default function Classification() {
 
           <div className={`${styles.card} ${styles.g3}`}>
             <div className={styles.badge}>G3</div>
-            <h3>Alta dependencia</h3>
+            <h3>Cuidado integral</h3>
             <p>
               Atención integral centrada en confort,
               supervisión continua y acompañamiento

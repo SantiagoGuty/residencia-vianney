@@ -1,5 +1,5 @@
 import SectionLayout from "@/components/ui/SectionLayout";
-import styles from "./Modalities.module.css";
+import styles from "../../app/styles/Modalities.module.css";
 
 export default function Modalities() {
   return (

@@ -12,6 +12,7 @@ import Modalities from "@/components/sections/Modalities";
 import Services from "@/components/sections/Services";
 import ContactBand from "@/components/sections/ContactBand";
 import ClubGallery from "@/components/sections/ClubGallery";
+import News from "@/components/sections/News";
 
 export default function HomeClient() {
   useReveal();
@@ -21,12 +22,13 @@ export default function HomeClient() {
       <div className="home">
         <HeroSlider />
         <Purpose />
-        <Classification />
         <Assessment />
+        <Classification />
         <Emotional />
         <Cognitive />
         <Services />
         <ClubGallery />
+        <News />
         <Modalities />
         <ContactBand />
       </div>

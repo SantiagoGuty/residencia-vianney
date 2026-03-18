@@ -1,0 +1,242 @@
+.section {
+  padding: 6rem 2rem;
+  position: relative;
+  background: var(--white);
+  overflow: hidden;
+}
+
+/* Match footer's geometric background */
+.section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 15% 25%, rgba(138, 186, 78, 0.3), transparent 50%),
+    radial-gradient(circle at 85% 75%, rgba(40, 175, 176, 0.3), transparent 50%),
+    linear-gradient(135deg, rgba(255, 255, 255, 0.3) 1px, transparent 1px);
+  background-size: 600px 600px, 500px 500px, 60px 60px;
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+/* Wave divider */
+.wave {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.inner {
+  position: relative;
+  z-index: 2;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* ── Section label ── */
+.label {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--teal);
+  margin-bottom: 2rem;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--teal);
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50%       { opacity: 0.5; transform: scale(1.4); }
+}
+
+/* ── Card shell ── */
+.card {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 4rem;
+  align-items: center;
+  background: #f7f9fb;
+  border-radius: var(--radius-lg);
+  border: 1px solid rgba(25, 100, 126, 0.08);
+  padding: 3.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Decorative corner circle */
+.card::before {
+  content: "";
+  position: absolute;
+  top: -60px;
+  right: -60px;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  background: rgba(40, 175, 176, 0.07);
+  pointer-events: none;
+}
+
+/* ── Left column ── */
+.tag {
+  display: inline-block;
+  background: rgba(40, 175, 176, 0.12);
+  color: var(--teal);
+  padding: 0.35rem 1rem;
+  border-radius: 999px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 1.2rem;
+}
+
+.cardLeft h2 {
+  font-size: clamp(1.7rem, 2.8vw, 2.2rem);
+  color: var(--blue);
+  line-height: 1.25;
+  margin-bottom: 1.5rem;
+}
+
+.cardLeft p {
+  font-size: 1.05rem;
+  line-height: 1.75;
+  color: var(--dark);
+  margin-bottom: 1rem;
+}
+
+.cardLeft p:last-of-type {
+  margin-bottom: 2rem;
+}
+
+/* ── CTA button ── */
+.cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  background: linear-gradient(135deg, var(--blue), var(--teal));
+  color: var(--white);
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.85rem 1.8rem;
+  border-radius: 999px;
+  text-decoration: none;
+  transition: transform 0.3s var(--ease-soft),
+              box-shadow 0.3s var(--ease-soft);
+  box-shadow: 0 8px 24px rgba(25, 100, 126, 0.2);
+}
+
+.cta:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 32px rgba(25, 100, 126, 0.3);
+}
+
+.cta svg {
+  transition: transform 0.3s var(--ease-soft);
+}
+
+.cta:hover svg {
+  transform: translateX(4px);
+}
+
+/* ── Right accent box ── */
+.accentBox {
+  background: linear-gradient(135deg, var(--blue), var(--teal));
+  border-radius: var(--radius-lg);
+  padding: 2.5rem;
+  color: var(--white);
+  box-shadow: 0 20px 40px rgba(25, 100, 126, 0.22);
+  position: relative;
+  overflow: hidden;
+}
+
+.accentBox::after {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+  bottom: -40%;
+  left: -40%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.12) 0%,
+    transparent 60%
+  );
+}
+
+.accentIcon {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+.accentBox h3 {
+  font-size: 1.4rem;
+  color: var(--white);
+  margin-bottom: 0.8rem;
+}
+
+.accentBox > p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.88);
+  margin-bottom: 1.6rem;
+}
+
+.featureList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.featureList li {
+  font-size: 0.97rem;
+  color: rgba(255, 255, 255, 0.9);
+  padding-left: 1.4rem;
+  position: relative;
+}
+
+.featureList li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* ── Responsive ── */
+@media (max-width: 900px) {
+  .card {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    padding: 2.5rem 2rem;
+  }
+
+  .card::before {
+    display: none;
+  }
+
+  .cardLeft h2 {
+    font-size: 1.6rem;
+  }
+
+  .accentBox {
+    padding: 2rem 1.8rem;
+  }
+}

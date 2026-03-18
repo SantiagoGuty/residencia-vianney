@@ -1,4 +1,4 @@
-import styles from "./ContactBand.module.css";
+import styles from "../../app/styles/ContactBand.module.css";
 import Image from "next/image";
 
 export default function ContactBand() {
@@ -31,7 +31,22 @@ export default function ContactBand() {
 
         <div className={styles.item}>
           <Image src="/icons/enfermeria.png" alt="Redes sociales" width={40} height={40} />
-          <p>Facebook – Instagram</p>
+          <div className={styles.socials}>
+            <a
+              href="https://www.facebook.com/share/17yPntmymA/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Facebook 
+            </a> <br /> <br />
+            <a
+              href="https://www.instagram.com/clubhousevianey?igsh=NHcwYTQyOWUwbmF3"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Instagram
+            </a>
+          </div>
         </div>
 
       </div>

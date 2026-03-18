@@ -84,7 +84,9 @@
   .hero {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
-    margin: 0;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+
   }
 
   .left h1 {

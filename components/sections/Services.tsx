@@ -1,11 +1,11 @@
-import styles from "./Services.module.css";
+import styles from "../../app/styles/Services.module.css";
 import Image from "next/image";
 
 export default function Services() {
   const services = [
-    { icon: "/icons/neurologia.png", title: "Neurología y Psiquiatría" },
+    { icon: "/icons/neurologia.png", title: "Neuropsicología" },
     { icon: "/icons/psicologia.png", title: "Psicología" },
-    { icon: "/icons/medicina.png", title: "Cuidado sanitario" },
+    { icon: "/icons/medicina.png", title: "Fisioterapia" },
     { icon: "/icons/enfermeria.png", title: "Enfermería 24H" },
     { icon: "/icons/fisioterapia.png", title: "Terapia ocupacional" },
     { icon: "/icons/nutricion.png", title: "Nutrición y Dietética" },
@@ -20,8 +20,8 @@ export default function Services() {
               <Image
                 src={service.icon}
                 alt={service.title}
-                width={60}
-                height={60}
+                width={50}
+                height={50}
               />
             </div>
             <h3>{service.title}</h3>

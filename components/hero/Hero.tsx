@@ -1,6 +1,6 @@
 "use client";
 
-import styles from "./Hero.module.css";
+import styles from "../../app/styles/Hero.module.css";
 import Image from "next/image";
 
 export default function Hero() {
