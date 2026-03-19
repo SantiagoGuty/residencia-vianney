@@ -7,7 +7,7 @@ export default function sitemap() {
       priority: 1.0,  // most important page
     },
     {
-      url: "https://clubhousevianey.com/servicios",
+      url: "https://clubhousevianey.com/servcios",
       lastModified: new Date(),
       changeFrequency: "monthly" as const,
       priority: 0.9,

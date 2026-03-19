@@ -45,6 +45,7 @@ export default function Navbar() {
           <Link href="/">Inicio</Link>
           <Link href="/servicios">Servicios</Link>
           <Link href="/quienes-somos">Quiénes Somos</Link>
+          <Link href="/noticias">Noticias</Link>
           <Link href="/contactanos" className={styles.contactButton}>
             Contáctanos
           </Link>
@@ -87,6 +88,7 @@ export default function Navbar() {
       >
           <Link href="/servicios" onClick={closeMenu}>Servicios</Link>
           <Link href="/quienes-somos" onClick={closeMenu}>Quienes Somos</Link>
+          <Link href="/noticias" onClick={closeMenu}>Noticias</Link>
           <Link href="/contactanos" onClick={closeMenu} className={styles.mobileCTA}>
             Contactanos
           </Link>

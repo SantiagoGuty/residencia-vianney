@@ -4,7 +4,33 @@
   min-height: 50vh;
   background: var(--blue);
 }
+/* ================= GEOMETRIC BACKGROUND ================= */
 
+.hero {
+  /* existing properties stay the same, just add: */
+  position: relative;
+  overflow: hidden;
+}
+
+.geoShapes {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.geoShapes svg {
+  width: 100%;
+  height: 100%;
+}
+
+/* Make sure left and right content sit above the shapes */
+.left,
+.right {
+  position: relative;
+  z-index: 1;
+}
 /* ================= LEFT ================= */
 
 .left {

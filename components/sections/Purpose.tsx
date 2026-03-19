@@ -1,4 +1,3 @@
-import SectionLayout from "@/components/ui/SectionLayout";
 import styles from "../../app/styles/Purpose.module.css";
 
 export default function Purpose() {
