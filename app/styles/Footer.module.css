@@ -6,15 +6,14 @@
 }
 
 /* Unique geometric background using brand tones */
-
 .footer::before {
   content: "";
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(circle at 15% 25%, rgba(138,186,78,0.3), transparent 50%),
-    radial-gradient(circle at 85% 75%, rgba(40,175,176,0.3), transparent 50%),
-    linear-gradient(135deg, rgba(255,255,255,0.3) 1px, transparent 1px);
+    radial-gradient(circle at 15% 25%, rgba(138, 186, 78, 0.3), transparent 50%),
+    radial-gradient(circle at 85% 75%, rgba(40, 175, 176, 0.3), transparent 50%),
+    linear-gradient(135deg, rgba(255, 255, 255, 0.3) 1px, transparent 1px);
   background-size: 600px 600px, 500px 500px, 60px 60px;
   opacity: 0.4;
   pointer-events: none;
@@ -23,11 +22,9 @@
 .inner {
   position: relative;
   z-index: 2;
-
   max-width: 1200px;
   margin: 0 auto;
   padding: 5rem 2rem 0rem;
-
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;
   gap: 4rem;
@@ -36,6 +33,11 @@
 /* ===================== */
 /* BRAND */
 /* ===================== */
+
+.brandColumn {
+  display: flex;
+  flex-direction: column;
+}
 
 .logoWrapper {
   margin-bottom: 2rem;
@@ -60,17 +62,19 @@
 
 .backToTop {
   background: transparent;
-  border: 1px solid rgba(250,255,248,0.4);
+  border: 1px solid rgba(25, 100, 126, 0.25);
   padding: 0.8rem 1.4rem;
-  color: var(--white);
+  color: var(--blue);
   cursor: pointer;
   border-radius: var(--radius-sm);
   transition: all 0.3s var(--ease-soft);
+  width: fit-content;
 }
 
 .backToTop:hover {
-  background: rgba(138,186,78,0.15);
+  background: rgba(138, 186, 78, 0.15);
   border-color: var(--green);
+  color: var(--green);
 }
 
 /* ===================== */
@@ -97,20 +101,33 @@
 }
 
 /* ===================== */
-/* WHATSAPP */
+/* SOCIAL MEDIA */
 /* ===================== */
 
-.whatsappRow {
-  text-align: center;
-  padding-bottom: 1.5rem;
+.socialRow {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.25rem;
+  padding: 2rem 1.5rem 1.75rem;
+  flex-wrap: wrap;
 }
 
-.whatsapp img {
+.socialIcon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   transition: transform 0.3s var(--ease-soft);
 }
 
-.whatsapp:hover img {
-  transform: translateY(-6px) scale(1.1);
+.socialIcon img {
+  transition: transform 0.3s var(--ease-soft), filter 0.3s var(--ease-soft);
+}
+
+.socialIcon:hover img {
+  transform: translateY(-6px) scale(1.08);
 }
 
 /* ===================== */
@@ -123,6 +140,8 @@
   padding: 1rem;
   font-size: 0.9rem;
   color: var(--white);
+  position: relative;
+  z-index: 2;
 }
 
 /* ===================== */
@@ -136,7 +155,15 @@
     text-align: center;
   }
 
+  .brandColumn {
+    align-items: center;
+  }
+
   .description {
     max-width: 100%;
+  }
+
+  .backToTop {
+    margin: 0 auto;
   }
 }

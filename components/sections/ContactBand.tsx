@@ -46,6 +46,25 @@ export default function ContactBand() {
             >
               Instagram
             </a>
+              <br /> <br />
+            <a
+              href="https://www.tiktok.com/@clubhousevianey?_r=1&_t=ZS-94o5FJUUJzc"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              TikTok
+            </a>
+
+            <br /> <br />
+            <a
+              href="https://www.facebook.com/share/17yPntmymA/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Facebook
+            </a>
+
+            
           </div>
         </div>
 

@@ -15,7 +15,6 @@ export default function Footer() {
   return (
     <footer className={styles.footer}>
       <div className={styles.inner}>
-
         {/* BRAND */}
         <div className={styles.brandColumn}>
           <Link
@@ -36,7 +35,8 @@ export default function Footer() {
           </Link>
 
           <p className={styles.description}>
-            Un lugar donde el cuidado profesional y la calidez humana se unen para acompañar cada etapa de la vida.
+            Un lugar donde el cuidado profesional y la calidez humana se unen
+            para acompañar cada etapa de la vida.
           </p>
 
           <button className={styles.backToTop} onClick={scrollTop}>
@@ -62,20 +62,18 @@ export default function Footer() {
           <Link href="/terminos-condiciones">
             Términos y Condiciones (Ley 1480/2011)
           </Link>
-          <Link href="/politica-privacidad">
-            Política de Privacidad
-          </Link>
+          <Link href="/politica-privacidad">Política de Privacidad</Link>
         </div>
-
       </div>
 
-      {/* WhatsApp */}
-      <div className={styles.whatsappRow}>
+      {/* SOCIAL MEDIA */}
+      <div className={styles.socialRow}>
         <a
           href="https://wa.me/573017230484"
           target="_blank"
           rel="noopener noreferrer"
-          className={styles.whatsapp}
+          className={styles.socialIcon}
+          aria-label="WhatsApp"
         >
           <Image
             src="/images/whatsapp_blue.png"
@@ -84,11 +82,57 @@ export default function Footer() {
             height={65}
           />
         </a>
+
+        <a
+          href="https://www.instagram.com/clubhousevianey?igsh=NHcwYTQyOWUwbmF3"
+          target="_blank"
+          rel="noopener noreferrer"
+          className={styles.socialIcon}
+          aria-label="Instagram"
+        >
+          <Image
+            src="/images/instagram_blue.png"
+            alt="Instagram"
+            width={65}
+            height={65}
+          />
+        </a>
+
+        <a
+          href="https://www.tiktok.com/@clubhousevianey?_r=1&_t=ZS-94o5FJUUJzc"
+          target="_blank"
+          rel="noopener noreferrer"
+          className={styles.socialIcon}
+          aria-label="TikTok"
+        >
+          <Image
+            src="/images/tiktok_blue.png"
+            alt="TikTok"
+            width={65}
+            height={65}
+          />
+        </a>
+
+        <a
+          href="https://www.facebook.com/share/17yPntmymA/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className={styles.socialIcon}
+          aria-label="Facebook"
+        >
+          <Image
+            src="/images/facebook_blue.png"
+            alt="Facebook"
+            width={65}
+            height={65}
+          />
+        </a>
       </div>
 
       {/* Bottom Strip */}
       <div className={styles.bottomStrip}>
-        © {new Date().getFullYear()} Club House Jean Batista Marie Vianey. Todos los derechos reservados.
+        © {new Date().getFullYear()} Club House Jean Batista Marie Vianey.
+        Todos los derechos reservados.
       </div>
     </footer>
   );
