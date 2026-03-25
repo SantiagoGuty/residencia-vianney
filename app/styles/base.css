@@ -10,8 +10,18 @@ body {
   background: var(--white);
   color: var(--text);
   scroll-behavior: smooth;
+  /*padding-top: 80px;*/
+
 }
 
+
+/* If you have a mobile breakpoint, you might need to adjust it 
+   since the logo/navbar is usually shorter on mobile 
+@media (max-width: 900px) {
+  main {
+    padding-top: 70px;
+  }
+} */
 
 main {
   overflow-x: hidden;

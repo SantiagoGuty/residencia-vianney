@@ -24,8 +24,8 @@ export default function Cognitive() {
             <h3>Memoria</h3>
             <span className={styles.subtitle}>Fortalecimiento de las funciones cognitivas</span>
             <p>
-              Actividades que estimulan la memoria, la atención y el
-              pensamiento para afrontar mejor las situaciones del día a día.
+              Actividades diseñadas para fortalecer la memoria y las funciones cognitivas, 
+              ayudando a los adultos mayores a mantener su mente activa y mejorar su calidad de vida diaria.
             </p>
           </div>
 
@@ -33,8 +33,8 @@ export default function Cognitive() {
             <h3>Atención</h3>
             <span className={styles.subtitle}>Agilidad mental y bienestar emocional</span>
             <p>
-              Ejercicios que mantienen la mente activa, favorecen la
-              interacción social y promueven el bienestar emocional.
+              Ejercicios que mejoran la atención, la agilidad mental y fomentan el
+              bienestar emocional mediante la interacción social y la estimulación constante.
             </p>
           </div>
 
@@ -42,8 +42,8 @@ export default function Cognitive() {
             <h3>Orientación</h3>
             <span className={styles.subtitle}>Fortalecimiento de las funciones cognitivas</span>
             <p>
-              Actividades que estimulan la memoria, la atención y el
-              pensamiento para afrontar mejor las situaciones del día a día.
+              Programas enfocados en mejorar la orientación y el pensamiento, permitiendo a los 
+              adultos mayores desenvolverse con mayor seguridad en su entorno diario.
             </p>
           </div>
         </div>

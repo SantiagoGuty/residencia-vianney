@@ -13,6 +13,7 @@ export default function Services() {
 
   return (
     <section className={styles.section} id="servicios">
+      <span className={styles.tag}>Nuestros servicios</span>
       <div className={styles.container}>
         {services.map((service, index) => (
           <div key={index} className={styles.card}>

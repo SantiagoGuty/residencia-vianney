@@ -5,7 +5,7 @@ import HomeClient from "./HomeClient";
 export const metadata: Metadata = {
   title: "Club House Vianey | Cuidado Integral para el Adulto Mayor",
   description:
-    "Ofrecemos internación, adulto día y estancia temporal para el adulto mayor en Puerto Colombia. Atención profesional, estimulación cognitiva y acompañamiento emocional. Puerto Colombia, Atlantico, Colombia.",
+    "Internación y cuidado para adultos mayores en Puerto Colombia. Atención profesional y acompañamiento emocional.",
   openGraph: {
     title: "Club House Vianey | Cuidado Integral para el Adulto Mayor",
     description:
