@@ -69,7 +69,7 @@ export default function Footer() {
       {/* SOCIAL MEDIA */}
       <div className={styles.socialRow}>
         <a
-          href="https://wa.me/573017230484"
+          href="https://wa.me/573224171420"
           target="_blank"
           rel="noopener noreferrer"
           className={styles.socialIcon}
