@@ -24,7 +24,7 @@ export default function Contactanos() {
 
           <div className={styles.block}>
             <h3>Teléfono</h3>
-            <p>+57 301 484 8600</p>
+            <p>+57 322-417-1420</p>
           </div>
 
           <div className={styles.block}>
@@ -45,7 +45,7 @@ export default function Contactanos() {
 
         <div className={styles.cta}>
           <a
-            href="https://wa.me/573017230484"
+            href="https://wa.me/573224171420"
             target="_blank"
             rel="noopener noreferrer"
             className={styles.button}
