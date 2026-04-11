@@ -64,6 +64,7 @@ export default function Navbar() {
             <Link href="/servicios">Servicios</Link>
             <Link href="/quienes-somos">Quiénes Somos</Link>
             <Link href="/noticias">Noticias</Link>
+            <Link href="/blog">Blog</Link>
             <Link href="/contactanos" className={styles.contactButton}>
               Contáctanos
             </Link>
@@ -92,6 +93,7 @@ export default function Navbar() {
         <Link href="/servicios" onClick={closeMenu}>Servicios</Link>
         <Link href="/quienes-somos" onClick={closeMenu}>Quienes Somos</Link>
         <Link href="/noticias" onClick={closeMenu}>Noticias</Link>
+        <Link href="/blog" onClick={closeMenu}>Blog</Link>
         <Link href="/contactanos" onClick={closeMenu} className={styles.mobileCTA}>Contactanos</Link>
         <div className={styles.mobileDivider} />
         <a className={styles.whatsappBtn} href="https://wa.me/573017230484" target="_blank" rel="noopener noreferrer" onClick={closeMenu}>WhatsApp</a>
